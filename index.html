@@ -3,10 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Portfolio - Alejandro Volponi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio Front End de Alejandro Volponi" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,12 +21,18 @@
             <div class="container">
                 <nav class="nav">
                     <div class="nav-logo">Alejandro <span>Volponi</span></div>
+
                     <div class="nav-links">
                         <a href="#inicio">Inicio</a>
                         <a href="#sobre-mi">Sobre mí</a>
                         <a href="#proyectos">Proyectos</a>
                         <a href="#contacto">Contacto</a>
                     </div>
+
+                    <!-- Botón de modo oscuro -->
+                    <button id="toggle-theme" class="btn btn-outline">
+                        Modo oscuro
+                    </button>
                 </nav>
             </div>
         </header>
@@ -128,7 +140,6 @@
                                     rel="noopener noreferrer">
                                     GitHub
                                 </a>
-                                <!-- <a href="#" target="_blank" rel="noopener noreferrer">Ver demo</a> -->
                             </div>
                         </article>
 
@@ -220,6 +231,26 @@
             © 2025 Alejandro Volponi · Portfolio Front End
         </footer>
     </div>
+
+    <!-- JS: modo oscuro -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById("toggle-theme");
+            const body = document.body;
+
+            if (!toggleBtn) return;
+
+            toggleBtn.addEventListener("click", () => {
+                body.classList.toggle("dark");
+
+                if (body.classList.contains("dark")) {
+                    toggleBtn.textContent = "Modo claro";
+                } else {
+                    toggleBtn.textContent = "Modo oscuro";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
