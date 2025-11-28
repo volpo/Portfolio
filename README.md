@@ -28,23 +28,27 @@ El portfolio está dividido en las siguientes secciones:
 
 ---
 
-## Estructura de archivos
 
-```bash
-proyecto-portfolio/
-├── index.html    # Archivo principal del sitio
-├── styles.css    # Estilos globales del portfolio
-└── README.md     # Documentación del proyecto
-
-
-## 🚀 Cómo ver el proyecto
+## Cómo ver el proyecto
 
 La versión deployada del portfolio se puede ver online en:
 
-👉 https://portfolio-sepia-nine-64.vercel.app/
+https://alejandro-volponi-portfolio.vercel.app/
 
 Si se desea ejecutar de forma local:
 
 1. Descargar o clonar este repositorio.
 2. Abrir el archivo `index.html` en cualquier navegador web moderno.
 3. Verificar que `styles.css` esté en la misma carpeta que `index.html`.
+
+
+## Estructura de archivos
+
+```bash
+Portfolio/
+├── index.html    # Archivo principal del sitio
+├── styles.css    # Estilos globales del portfolio
+└── README.md     # Documentación del proyecto
+
+---
+
