@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - Alejandro Volponi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Front End de Alejandro Volponi" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav-logo">Alejandro <span>Volponi</span></div>
+                    <div class="nav-links">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobre-mi">Sobre mí</a>
+                        <a href="#proyectos">Proyectos</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section id="inicio">
+                <div class="container hero">
+                    <div class="hero-text">
+                        <div class="hero-highlight">
+                            ⌨️ Portfolio Front End
+                        </div>
+                        <h1>Hola, soy Alejandro, desarrollador Front End en formación.</h1>
+                        <p>
+                            Estudiante de Desarrollo de Software, enfocado en construir interfaces limpias,
+                            accesibles y fáciles de usar con HTML, CSS y JavaScript.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                            <a href="#contacto" class="btn btn-outline">Contactarme</a>
+                        </div>
+                    </div>
+
+                    <aside class="hero-badge">
+                        <div class="hero-badge-title">Stack principal</div>
+                        <div class="hero-badge-skills">
+                            <span class="pill">HTML5</span>
+                            <span class="pill">CSS3 (Flexbox / Grid)</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">Git & GitHub</span>
+                            <span class="pill">Responsive Design</span>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- SOBRE MÍ -->
+            <section id="sobre-mi">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Sobre mí</h2>
+                        <p class="section-subtitle">Quién soy y qué me gusta construir.</p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="card about-text">
+                            <p>
+                                Soy Alejandro Volponi, estudiante de la Tecnicatura en Desarrollo de Software,
+                                con interés en el desarrollo Front End y la construcción de productos digitales
+                                orientados a datos y experiencia de usuario.
+                            </p>
+                            <p>
+                                Disfruto trabajar con interfaces claras, componentes reutilizables y
+                                buenas prácticas de maquetación. Me interesa seguir creciendo en JavaScript,
+                                React y en el uso de APIs.
+                            </p>
+                            <ul class="about-list">
+                                <li><span>Ubicación:</span> Buenos Aires, Argentina</li>
+                                <li><span>Rol actual:</span> Estudiante / Front End Jr.</li>
+                                <li><span>Intereses:</span> UI limpia, performance, visualización de datos</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="margin-bottom: 0.75rem; font-size: 1rem;">Skills principales</h3>
+                            <div class="skills-tags">
+                                <span class="pill">HTML semántico</span>
+                                <span class="pill">CSS (Flexbox & Grid)</span>
+                                <span class="pill">Responsive Web Design</span>
+                                <span class="pill">JavaScript básico / DOM</span>
+                                <span class="pill">Git & GitHub</span>
+                                <span class="pill">Control de versiones</span>
+                                <span class="pill">VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROYECTOS -->
+            <section id="proyectos">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Proyectos</h2>
+                        <p class="section-subtitle">
+                            Algunos trabajos realizados para la materia de Front End y práctica personal.
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Proyecto 1 -->
+                        <article class="project-card">
+                            <div>
+                                <h3 class="project-title">TP1 - FrontEnd JavaScript</h3>
+                                <p class="project-desc">
+                                    Aplicación web básica con JavaScript que manipula el DOM y responde a
+                                    eventos del usuario. Incluye validación de formularios y actualización dinámica.
+                                </p>
+                                <p class="project-meta">
+                                    Tecnologías: HTML, CSS, JavaScript
+                                </p>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/volpo/FrontEnd_JavaScript_TP1" target="_blank"
+                                    rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                                <!-- <a href="#" target="_blank" rel="noopener noreferrer">Ver demo</a> -->
+                            </div>
+                        </article>
+
+                        <!-- Proyecto 2 -->
+                        <article class="project-card">
+                            <div>
+                                <h3 class="project-title">Landing Page Responsive</h3>
+                                <p class="project-desc">
+                                    Landing page estática con diseño responsive utilizando Flexbox y Grid,
+                                    pensada para mostrar un producto o servicio simple.
+                                </p>
+                                <p class="project-meta">
+                                    Tecnologías: HTML, CSS
+                                </p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Proyecto 3 -->
+                        <article class="project-card">
+                            <div>
+                                <h3 class="project-title">Mini aplicación de tareas</h3>
+                                <p class="project-desc">
+                                    Lista de tareas simple donde se pueden agregar y marcar tareas como realizadas,
+                                    utilizando almacenamiento en memoria (sin backend).
+                                </p>
+                                <p class="project-meta">
+                                    Tecnologías: HTML, CSS, JavaScript
+                                </p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section id="contacto">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Contacto</h2>
+                        <p class="section-subtitle">¿Querés hablar sobre un proyecto o práctica profesional?</p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="card contact-info">
+                            <p>
+                                Si querés contactarme por proyectos, prácticas o simplemente para charlar
+                                sobre desarrollo front end, te dejo mis datos:
+                            </p>
+                            <ul class="contact-list">
+                                <li><span>Email:</span> alejandrovolponi@gmail.com</li>
+                                <li><span>Ciudad:</span> Buenos Aires, Argentina</li>
+                            </ul>
+
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/alevolponi/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    LinkedIn
+                                </a>
+                                <a href="https://github.com/volpo" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="font-size: 1rem; margin-bottom: 0.75rem;">Estado actual</h3>
+                            <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+                                ✔️ Estudiando Front End y Desarrollo de Software<br />
+                                ✔️ Práctica con proyectos propios y trabajos prácticos<br />
+                                ✔️ Abierto a seguir aprendiendo nuevas tecnologías y frameworks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2025 Alejandro Volponi · Portfolio Front End
+        </footer>
+    </div>
+</body>
+
+</html>
